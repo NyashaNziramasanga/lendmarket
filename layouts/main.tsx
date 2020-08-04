@@ -11,7 +11,7 @@ import {
 import { Route, MenuDataItem } from '@ant-design/pro-layout/lib/typings';
 import { SiderMenuProps } from '@ant-design/pro-layout/lib/SiderMenu/SiderMenu';
 
-const ProLayout = dynamic(() => import('@ant-design/pro-layout'), {
+const Layout = dynamic(() => import('@ant-design/pro-layout'), {
   ssr: false,
 });
 
@@ -23,6 +23,11 @@ const ROUTES: Route = {
       name: 'Investor',
       icon: <UserOutlined />,
       routes: [
+        {
+          path: '/dashboard',
+          name: 'Dashboard',
+          icon: <HomeOutlined />,
+        },
         {
           path: '/marketplace',
           name: 'Marketplace',
@@ -64,13 +69,13 @@ const menuItemRender = (options: MenuDataItem, element: React.ReactNode) => (
 
 export default function Main({ children }) {
   return (
-    <ProLayout
+    <Layout
       style={{ minHeight: '100vh' }}
       route={ROUTES}
       menuItemRender={menuItemRender}
       menuHeaderRender={menuHeaderRender}
     >
       {children}
-    </ProLayout>
+    </Layout>
   );
 }
