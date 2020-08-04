@@ -1,52 +1,12 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-
-import {
-  UserOutlined,
-  HomeOutlined,
-  ProfileOutlined,
-  SolutionOutlined,
-} from '@ant-design/icons';
-
-import { Route, MenuDataItem } from '@ant-design/pro-layout/lib/typings';
+import { ROUTES } from './routes';
+import { MenuDataItem } from '@ant-design/pro-layout/lib/typings';
 import { SiderMenuProps } from '@ant-design/pro-layout/lib/SiderMenu/SiderMenu';
 
 const Layout = dynamic(() => import('@ant-design/pro-layout'), {
   ssr: false,
 });
-
-const ROUTES: Route = {
-  path: '/',
-  routes: [
-    {
-      path: '/',
-      name: 'Investor',
-      icon: <UserOutlined />,
-      routes: [
-        {
-          path: '/dashboard',
-          name: 'Dashboard',
-          icon: <HomeOutlined />,
-        },
-        {
-          path: '/marketplace',
-          name: 'Marketplace',
-          icon: <HomeOutlined />,
-        },
-        {
-          path: '/loan-exchange',
-          name: 'Loan Exchange',
-          icon: <ProfileOutlined />,
-        },
-      ],
-    },
-    {
-      path: '/borrower',
-      name: 'borrower',
-      icon: <SolutionOutlined />,
-    },
-  ],
-};
 
 const menuHeaderRender = (
   logoDom: React.ReactNode,
