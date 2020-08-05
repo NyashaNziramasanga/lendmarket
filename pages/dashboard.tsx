@@ -1,5 +1,5 @@
 import MainLayout from '../layouts/main';
-import { Card, Breadcrumb, Tabs, Row, Col } from 'antd';
+import { Card, Breadcrumb, Tabs, Row, Col, Statistic } from 'antd';
 import {
   HomeOutlined,
   UserOutlined,
@@ -36,30 +36,62 @@ export default function Dashboard() {
             type='inner'
             style={{ height: 300 }}
           >
-            <p>Available for Investment:</p>
-            <h2>$10,000.00</h2>
-            <p>Total Current Investments:</p>
-            <h2>$5,000.00</h2>
+            <Statistic
+              title='Available for Investment'
+              prefix={'$'}
+              value={10000}
+              precision={2}
+            />
+            <Statistic
+              title='Total Current Investments'
+              prefix={'$'}
+              value={5000}
+              precision={2}
+            />
           </Card>
         </Col>
         <Col span={8}>
           <Card title='Issued and Current' type='inner' style={{ height: 300 }}>
-            <p>Gross yield</p>
-            <h2>15.25%</h2>
-            <p>Annual net return</p>
-            <h2>11.74%</h2>
-            <p>Estimated net return</p>
-            <h2>11.74%</h2>
+            <Statistic
+              title='Gross yield'
+              suffix={'%'}
+              value={15.25}
+              precision={2}
+            />
+            <Statistic
+              title='Annual net return'
+              suffix={'%'}
+              value={11.74}
+              precision={2}
+            />
+            <Statistic
+              title='Estimated net return'
+              suffix={'%'}
+              value={11.74}
+              precision={2}
+            />
           </Card>
         </Col>
         <Col span={8}>
           <Card title='Transactions' type='inner' style={{ height: 300 }}>
-            <p>Total Amount Invested</p>
-            <h2>$3,500.00</h2>
-            <p>Interest payments</p>
-            <h2>$340.00</h2>
-            <p>Defaulted Interest payments</p>
-            <h2>$0.00</h2>
+            <Statistic
+              title='Total Amount Invested'
+              prefix={'$'}
+              value={3500}
+              precision={2}
+            />
+            <Statistic
+              title='Interest payments'
+              prefix={'$'}
+              value={340}
+              precision={2}
+            />
+            <Statistic
+              title='Defaulted Interest Payments'
+              prefix={'$'}
+              value={0}
+              precision={2}
+            />
           </Card>
         </Col>
       </Row>

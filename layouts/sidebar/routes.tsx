@@ -35,7 +35,7 @@ export const ROUTES: Route = {
     },
     {
       path: '/borrower',
-      name: 'borrower',
+      name: 'Borrower',
       icon: <SolutionOutlined />,
     },
   ],
