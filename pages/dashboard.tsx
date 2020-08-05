@@ -1,6 +1,10 @@
 import MainLayout from '../layouts/main';
-import { Card, Breadcrumb, Tabs, Row, Col, Tooltip } from 'antd';
-import { HomeOutlined, UserOutlined } from '@ant-design/icons';
+import { Card, Breadcrumb, Tabs, Row, Col } from 'antd';
+import {
+  HomeOutlined,
+  UserOutlined,
+  PieChartOutlined,
+} from '@ant-design/icons';
 
 const { TabPane } = Tabs;
 
@@ -12,12 +16,18 @@ export default function Dashboard() {
         <Breadcrumb.Item href=''>
           <HomeOutlined />
         </Breadcrumb.Item>
+
         <Breadcrumb.Item href=''>
           <UserOutlined />
           <span>Investor</span>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
+
+        <Breadcrumb.Item>
+          <PieChartOutlined />
+          <span>Dashboard</span>
+        </Breadcrumb.Item>
       </Breadcrumb>
+      <br />
 
       <Row gutter={16}>
         <Col span={8}>
