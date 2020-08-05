@@ -53,19 +53,19 @@ export default function Dashboard() {
         <Col span={8}>
           <Card title='Issued and Current' type='inner' style={{ height: 300 }}>
             <Statistic
-              title='Gross yield'
+              title='Gross Yield'
               suffix={'%'}
               value={15.25}
               precision={2}
             />
             <Statistic
-              title='Annual net return'
+              title='Annual Net Return'
               suffix={'%'}
               value={11.74}
               precision={2}
             />
             <Statistic
-              title='Estimated net return'
+              title='Estimated Net Return'
               suffix={'%'}
               value={11.74}
               precision={2}
@@ -81,7 +81,7 @@ export default function Dashboard() {
               precision={2}
             />
             <Statistic
-              title='Interest payments'
+              title='Interest Payments'
               prefix={'$'}
               value={340}
               precision={2}
