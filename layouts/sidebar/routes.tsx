@@ -38,5 +38,10 @@ export const ROUTES: Route = {
       name: 'Borrower',
       icon: <SolutionOutlined />,
     },
+    {
+      path: '/account',
+      name: 'Account',
+      icon: <ProfileOutlined />,
+    },
   ],
 };
