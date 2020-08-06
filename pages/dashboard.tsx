@@ -109,13 +109,13 @@ export default function Dashboard() {
           <TabPane tab='Current Investments' key='2'>
             <p>Content of tab 2</p>
           </TabPane>
-          <TabPane tab='Your Loan Parts for sale' key='3'>
+          <TabPane tab='Loan Parts for Sale' key='3'>
             <p>Content of tab 3</p>
           </TabPane>
-          <TabPane tab='Loan Parts Returns' key='4'>
+          <TabPane tab='Returns on Loan Parts' key='4'>
             <p>Content of tab 4</p>
           </TabPane>
-          <TabPane tab='Your Investor Statements' key='5'>
+          <TabPane tab='My Investor Statements' key='5'>
             <p>Content of tab 5</p>
           </TabPane>
           <TabPane tab='My Bids' key='6'>
