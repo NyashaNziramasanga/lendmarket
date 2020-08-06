@@ -6,6 +6,8 @@ import {
   PieChartOutlined,
 } from '@ant-design/icons';
 
+import data from '../data.json';
+
 const { TabPane } = Tabs;
 
 export default function Dashboard() {
@@ -39,57 +41,59 @@ export default function Dashboard() {
             <Statistic
               title='Available for Investment'
               prefix={'$'}
-              value={10000}
+              value={data.investments.availableInvestment}
               precision={2}
             />
             <Statistic
               title='Total Current Investments'
               prefix={'$'}
-              value={5000}
+              value={data.investments.currentInvestment}
               precision={2}
             />
           </Card>
         </Col>
+
         <Col span={8}>
           <Card title='Issued and Current' type='inner' style={{ height: 300 }}>
             <Statistic
               title='Gross Yield'
               suffix={'%'}
-              value={15.25}
+              value={data.performance.grossYield}
               precision={2}
             />
             <Statistic
               title='Annual Net Return'
               suffix={'%'}
-              value={11.74}
+              value={data.performance.annualNetReturn}
               precision={2}
             />
             <Statistic
               title='Estimated Net Return'
               suffix={'%'}
-              value={11.74}
+              value={data.performance.estimatedNetReturn}
               precision={2}
             />
           </Card>
         </Col>
+
         <Col span={8}>
           <Card title='Transactions' type='inner' style={{ height: 300 }}>
             <Statistic
               title='Total Amount Invested'
               prefix={'$'}
-              value={3500}
+              value={data.transaction.totalAmountInvested}
               precision={2}
             />
             <Statistic
               title='Interest Payments'
               prefix={'$'}
-              value={340}
+              value={data.transaction.interestPayments}
               precision={2}
             />
             <Statistic
               title='Defaulted Interest Payments'
               prefix={'$'}
-              value={0}
+              value={data.transaction.defaultedInterestPayments}
               precision={2}
             />
           </Card>
