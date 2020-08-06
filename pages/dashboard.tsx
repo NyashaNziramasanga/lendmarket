@@ -7,6 +7,7 @@ import {
 } from '@ant-design/icons';
 
 import data from '../data.json';
+import CurrentBids from '../components/dashboard/currentBids';
 
 const { TabPane } = Tabs;
 
@@ -108,7 +109,8 @@ export default function Dashboard() {
           style={{ marginBottom: 32 }}
         >
           <TabPane tab='Current Bids' key='1'>
-            <p>Content of tab 1</p>
+            <CurrentBids />
+            {/* <p>Content of tab 1</p> */}
           </TabPane>
           <TabPane tab='Current Investments' key='2'>
             <p>Content of tab 2</p>
