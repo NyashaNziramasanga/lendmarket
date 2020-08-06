@@ -3,7 +3,7 @@
     💵 Lendmarket 🤲
     </h1>
     <p>
-      <i>Clone/redesign of <a href="#">marketlend.com.au</a> a P2P lending platform</i>
+      <i>Redesign of <a href="#">marketlend.com.au</a> a P2P lending platform</i>
     </p>
 </div>
 
