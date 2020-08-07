@@ -1,5 +1,5 @@
 import MainLayout from '../layouts/main';
-import { Table, Button } from 'antd';
+import { Table, Button, Progress } from 'antd';
 
 export default function Marketplace() {
   const data = [
@@ -10,8 +10,7 @@ export default function Marketplace() {
       amount: 50000,
       term: 12,
       rate: 11,
-      funding: 56,
-      timeRemaining: 1,
+      progress: 70,
     },
   ];
 
@@ -42,14 +41,9 @@ export default function Marketplace() {
       key: 'rate',
     },
     {
-      title: 'Funding',
-      dataIndex: 'funding',
-      key: 'funding',
-    },
-    {
-      title: 'Time Remaining',
-      dataIndex: 'time remaining',
-      key: 'time remaining',
+      title: 'Progress',
+      key: 'progress',
+      render: (record) => <Progress percent={record.progress} size='small' />,
     },
     {
       title: '',
