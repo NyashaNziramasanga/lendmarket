@@ -1,9 +1,10 @@
 import MainLayout from '../layouts/main';
-import { Table, Button, Progress, Avatar } from 'antd';
+import { Table, Button, Progress, Avatar, Statistic } from 'antd';
 
 const { Column } = Table;
 
 export default function Marketplace() {
+  // TODO: Create a data.json file
   const data = [
     {
       key: '1',
@@ -14,6 +15,15 @@ export default function Marketplace() {
       rate: 11,
       progress: 70,
     },
+    {
+      key: '2',
+      name: 'Harper Logistics',
+      risk: 80,
+      amount: 150000,
+      term: 12,
+      rate: 15,
+      progress: 10,
+    },
   ];
 
   return (
@@ -22,6 +32,7 @@ export default function Marketplace() {
         <Column
           title=''
           dataIndex='image'
+          align='center'
           key='image'
           render={(text, record: any) => (
             // TODO: if there is an image reveal else use initials
@@ -35,14 +46,63 @@ export default function Marketplace() {
             </Avatar>
           )}
         />
-        <Column title='Name' dataIndex='name' key='name' />
-        <Column title='Risk' dataIndex='risk' key='risk' />
-        <Column title='Amount' dataIndex='amount' key='amount' />
-        <Column title='Term (Months)' dataIndex='term' key='term' />
-        <Column title='Rate' dataIndex='rate' key='rate' />
+        <Column title='Name' dataIndex='name' align='left' key='name' />
+        <Column
+          title='Risk'
+          dataIndex='risk'
+          align='center'
+          key='risk'
+          render={(text, record: any) => (
+            <Statistic
+              suffix={'%'}
+              value={record.risk}
+              valueStyle={{ fontSize: '14px', color: 'rgba(0, 0, 0, 0.65)' }}
+            />
+          )}
+        />
+        <Column
+          title='Amount'
+          dataIndex='amount'
+          align='center'
+          key='amount'
+          render={(text, record: any) => (
+            <Statistic
+              prefix={'$'}
+              value={record.amount}
+              valueStyle={{ fontSize: '14px', color: 'rgba(0, 0, 0, 0.65)' }}
+            />
+          )}
+        />
+        <Column
+          title='Term'
+          dataIndex='term'
+          align='center'
+          key='term'
+          render={(text, record: any) => (
+            <Statistic
+              suffix={'months'}
+              value={record.term}
+              valueStyle={{ fontSize: '14px', color: 'rgba(0, 0, 0, 0.65)' }}
+            />
+          )}
+        />
+        <Column
+          title='Rate'
+          dataIndex='rate'
+          align='center'
+          key='rate'
+          render={(text, record: any) => (
+            <Statistic
+              suffix={'%'}
+              value={record.rate}
+              valueStyle={{ fontSize: '14px', color: 'rgba(0, 0, 0, 0.65)' }}
+            />
+          )}
+        />
         <Column
           title='Progress'
           dataIndex='progress'
+          align='center'
           render={(text, record: any) => (
             <Progress
               percent={record.progress}
