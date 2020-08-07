@@ -43,7 +43,13 @@ export default function Marketplace() {
     {
       title: 'Progress',
       key: 'progress',
-      render: (record) => <Progress percent={record.progress} size='small' />,
+      render: (record) => (
+        <Progress
+          percent={record.progress}
+          size='small'
+          strokeColor={{ from: '#52c41a', to: '#52c41a' }}
+        />
+      ),
     },
     {
       title: '',
