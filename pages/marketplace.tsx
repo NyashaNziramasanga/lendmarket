@@ -1,11 +1,11 @@
 import MainLayout from '../layouts/main';
-import { Table, Button, Progress } from 'antd';
+import { Table, Button, Progress, Avatar } from 'antd';
 
 export default function Marketplace() {
   const data = [
     {
       key: '1',
-      name: 'TY Transport',
+      name: 'TY Incorp',
       risk: 97,
       amount: 50000,
       term: 12,
@@ -15,6 +15,21 @@ export default function Marketplace() {
   ];
 
   const columns = [
+    {
+      title: '',
+      key: 'image',
+      render: (record) => (
+        // TODO: if there is an image reveal else use initials
+        <Avatar
+          shape='square'
+          size='large'
+          style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}
+          // src='https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
+        >
+          {record.name}
+        </Avatar>
+      ),
+    },
     {
       title: 'Name',
       dataIndex: 'name',
