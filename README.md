@@ -20,7 +20,7 @@ npm run dev
 
 ## 🏗️ Built With
 
-- [Ant Design](https://pro.ant.design/)
+- [Ant Design Pro](https://pro.ant.design/)
 - [Next JS](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React JS](https://reactjs.org/)
