@@ -1,6 +1,6 @@
 import MainLayout from '../layouts/main';
 import Link from 'next/link';
-import { Card, Row, Col } from 'antd';
+import { Card, Row, Col, Steps } from 'antd';
 
 export default function Home() {
   const adStyle: any = {
@@ -44,7 +44,15 @@ export default function Home() {
       <br />
       <Row>
         <Col span={24}>
-          <Card.Grid style={adStyle}>How it works</Card.Grid>
+          <Card.Grid style={adStyle}>
+            <h3>How it works</h3>
+            <br />
+            <Steps>
+              <Steps.Step title='Find' description='Search for a borrower.' />
+              <Steps.Step title='Invest' description='Allocate funds.' />
+              <Steps.Step title='Returns' description='Receive funds.' />
+            </Steps>
+          </Card.Grid>
         </Col>
       </Row>
     </MainLayout>
