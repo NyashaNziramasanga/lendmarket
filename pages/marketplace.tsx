@@ -10,6 +10,7 @@ export default function Marketplace() {
     {
       key: '1',
       name: 'TY Incorp',
+      slug: 'ty-incorp',
       risk: 97,
       amount: 50000,
       term: 12,
@@ -19,6 +20,7 @@ export default function Marketplace() {
     {
       key: '2',
       name: 'Harper Logistics',
+      slug: 'harper-logistics',
       risk: 80,
       amount: 150000,
       term: 12,
@@ -118,9 +120,12 @@ export default function Marketplace() {
           title=''
           dataIndex='action'
           key='action'
-          render={(text, record) => (
+          render={(text, record: any) => (
             <Button>
-              <Link href='/marketplace/[org]' as='/marketplace/org'>
+              <Link
+                href='/marketplace/[org]'
+                as={`/marketplace/${record.slug}`}
+              >
                 View
               </Link>
             </Button>
