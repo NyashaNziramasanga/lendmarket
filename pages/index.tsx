@@ -26,14 +26,14 @@ export default function Home() {
       <Row>
         <Col span={12}>
           {/* TODO: Create Invest and borrow application form */}
-          <Link href='#'>
+          <Link href='/invest'>
             <Card.Grid style={style}>
               <h3>Invest</h3>
             </Card.Grid>
           </Link>
         </Col>
         <Col span={12}>
-          <Link href='#'>
+          <Link href='/borrow'>
             <Card.Grid style={style}>
               <h3>Borrow</h3>
             </Card.Grid>
