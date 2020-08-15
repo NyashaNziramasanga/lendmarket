@@ -47,7 +47,7 @@ export default function Home() {
           <Card.Grid style={adStyle}>
             <h3>How it works</h3>
             <br />
-            <Steps>
+            <Steps progressDot current={3}>
               <Steps.Step title='Find' description='Search for a borrower.' />
               <Steps.Step title='Invest' description='Allocate funds.' />
               <Steps.Step title='Returns' description='Receive funds.' />
