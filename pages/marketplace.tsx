@@ -1,5 +1,6 @@
 import MainLayout from '../layouts/main';
-import { Table, Button, Progress, Avatar, Statistic } from 'antd';
+import { Table, Button, Space, Progress, Avatar, Statistic } from 'antd';
+import Link from 'next/link';
 
 const { Column } = Table;
 
@@ -25,6 +26,8 @@ export default function Marketplace() {
       progress: 10,
     },
   ];
+
+  // const t = <Link to='/'>view</Link>;
 
   return (
     <MainLayout>
@@ -114,7 +117,14 @@ export default function Marketplace() {
         <Column
           title=''
           dataIndex='action'
-          render={() => <Button>View</Button>}
+          key='action'
+          render={(text, record) => (
+            <Button>
+              <Link href='/marketplace/[org]' as='/marketplace/org'>
+                View
+              </Link>
+            </Button>
+          )}
         />
       </Table>
     </MainLayout>
