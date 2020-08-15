@@ -1,5 +1,6 @@
 import MainLayout from '../../layouts/main';
 import { Card, Tabs } from 'antd';
+import About from './about';
 
 const { TabPane } = Tabs;
 
@@ -14,7 +15,7 @@ export default function org() {
           style={{ marginBottom: 32 }}
         >
           <TabPane tab='About' key='1'>
-            <p>Content of tab 1</p>
+            <About />
           </TabPane>
           <TabPane tab='Current Bids' key='2'>
             <p>Content of tab 2</p>
