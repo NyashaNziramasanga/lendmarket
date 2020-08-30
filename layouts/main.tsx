@@ -12,7 +12,7 @@ export default function Main({ children }) {
       style={{ minHeight: '100vh' }}
       route={ROUTES}
       menuItemRender={sidebarItem}
-      title={'Lend Market'}
+      title={'💰 Lend Market'}
       logo={null}
     >
       {children}
