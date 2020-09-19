@@ -14,7 +14,7 @@ export default function profile() {
 
   return (
     <div>
-      <h2>Details</h2>
+      <h2>Personal Details</h2>
       <Form {...formItemLayout}>
         <Form.Item label='Username'>
           <Input placeholder='' />
