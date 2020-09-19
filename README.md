@@ -9,6 +9,8 @@
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/NyashaNziboi.svg?style=social)](https://twitter.com/NyashaNziboi)
 
+![lendmarket.png](assets/images/lendmarket.png)
+
 ## ⚙️ Scripts
 
 ```bash
