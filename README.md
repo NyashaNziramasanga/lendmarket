@@ -3,7 +3,9 @@
     💵 Lendmarket 🤲
     </h1>
     <p>
-      <i>Redesign idea of <a href="#">marketlend.com.au</a> a P2P lending platform</i>
+      <i>
+      <a href="lendmarket.vercel.app">lendmarket</a>
+      Redesign concept for <a href="https://marketlend.com.au/">marketlend.com.au</a> a P2P lending platform </i>
     </p>
 </div>
 
