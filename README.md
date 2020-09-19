@@ -5,7 +5,7 @@
     <p>
       <i>
       <a href="lendmarket.vercel.app">lendmarket</a>
-      Redesign concept for <a href="https://marketlend.com.au/">marketlend.com.au</a> a P2P lending platform </i>
+      redesign concept for <a href="https://marketlend.com.au/">marketlend.com.au</a> a P2P lending platform </i>
     </p>
 </div>
 
