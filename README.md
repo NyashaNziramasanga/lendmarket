@@ -1,6 +1,6 @@
 <div align="center">
     <h1> 
-    💵 Lendmarket 🤲
+    💵 Lendmarket 🏦
     </h1>
     <p>
       <i>
